@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section>
+  <header>
+    <h1 th:text="${title}">标题</h1>
+  </header>
+    <article>
+        <div>
+            <p th:text="${username}">用户名</p>
+            <p th:text="${#calendars.format(date,'yyyy-MM-dd')}">日期</p>
+        </div>
+        <p th:text="${message}"></p>
+    </article>
+    <footer th:text="${foot}">脚注</footer>
+</section>
+
+</body>
+</html>
